@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddCategoriesActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bg1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inner_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        android:elevation="15dp"
+        android:translationY="-70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".89">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_new_category"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_add_category"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/category_add"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/bg3"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inner_constraintLayout"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".9"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--
+          <TextView
+              android:id="@+id/d"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Add Category"
+              android:textSize="22sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintVertical_bias="0" />
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/inner_constraintLayout2"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:elevation="20dp"
+               android:background="@drawable/bg2"
+               >
+
+               <Button
+          android:layout_width="140dp"
+          android:layout_height="40dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:translationY="-30dp"
+          android:elevation="30dp"
+          android:text="@string/category_save"
+          app:layout_constraintBottom_toBottomOf="@id/inner_constraintLayout"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/inner_constraintLayout" />
+  -->
+
+
