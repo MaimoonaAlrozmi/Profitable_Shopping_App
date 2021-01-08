@@ -1,7 +1,8 @@
-package com.finalproject.profitableshopping
+package com.finalproject.profitableshopping.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.finalproject.profitableshopping.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
